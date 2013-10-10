@@ -5,7 +5,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
- var contents_buffer = fs.readFileSync("index.html");
+ var contents_buffer = fs.readFileSync("bitstarter-hw4.html");
  var contents = contents_buffer.toString();
  response.send(contents);
 });
